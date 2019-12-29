@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="styles/style.css"/>
+        <script type="text/javascript" src="js/weather.js"></script>
+    </head>
+    <body>
+        {{>header}}
+        <h1>Test <i>{{content}}</i></h1>
+        <p> Name : {{name}} </p>
+
+        <form action="" novalidate>
+            <input type="text" name="address">
+        </form>
+        <button onclick="weather.getWeather()">Get Weather </button>
+        <div id="weather"></div>
+    </body>
+</html>
