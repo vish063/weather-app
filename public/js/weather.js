@@ -2,7 +2,7 @@ const weather = {};
 weather.getSearchValue = () => document.getElementsByName('address')[0].value;
 weather.getWeather = async () => {
     const value = weather.getSearchValue();
-    const reqUrl = `http://localhost:3000/weather?address=${value}`;
+    const reqUrl = `/weather?address=${value}`;
     try {
       const res =   await fetch(reqUrl);
       const data =  await res.json();
