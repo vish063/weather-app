@@ -7,8 +7,8 @@ const {darkSky, geocode} = require('./utils/utils');
 const app = express();
 const port = process.env.PORT || 3000;
 const publicDir = path.join(__dirname, '../public');
-const viewsPath = path.join(process.cwd(), 'templates/views');
-const partialsPath = path.join(process.cwd(), '/templates/partials');
+const viewsPath = path.join(process.cwd(), '/src/templates/views');
+const partialsPath = path.join(process.cwd(), '/src/templates/partials');
 
 app.set('view engine', 'hbs');
 app.set('views', viewsPath);
